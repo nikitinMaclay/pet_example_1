@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио — Nebula Studio</title>
+  <meta name="description" content="Избранные проекты Nebula Studio: лендинги, магазины, корпоративные сайты и веб-приложения.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><span class="logo-mark">N</span> Nebula<span class="gradient-text">Studio</span></a>
+      <button class="nav-toggle" aria-label="Меню">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="services.html">Услуги</a>
+        <a href="portfolio.html" class="active">Портфолио</a>
+        <a href="contact.html">Контакты</a>
+        <a href="contact.html" class="btn btn-primary nav-cta">Обсудить проект</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding:80px 0 40px;">
+      <div class="container">
+        <span class="hero-badge"><span class="dot"></span> Портфолио</span>
+        <h1>Проекты, которыми <span class="gradient-text">мы гордимся</span></h1>
+        <p class="lead">Подборка работ разных направлений. Используйте фильтр, чтобы найти нужный тип проекта.</p>
+      </div>
+    </section>
+
+    <section style="padding-top:20px;">
+      <div class="container">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="landing">Лендинги</button>
+          <button class="filter-btn" data-filter="shop">Магазины</button>
+          <button class="filter-btn" data-filter="corp">Корпоративные</button>
+          <button class="filter-btn" data-filter="app">Веб-приложения</button>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="work-card reveal" data-category="landing">
+            <div class="work-thumb" style="background:linear-gradient(135deg,#6c8cff,#b06cff)">Aurora</div>
+            <div class="work-body"><span class="tag">Лендинг</span><h3>Aurora SaaS</h3><p>Продающая страница для облачного сервиса с A/B-тестами.</p></div>
+          </article>
+          <article class="work-card reveal" data-category="shop">
+            <div class="work-thumb" style="background:linear-gradient(135deg,#2ee6c5,#6c8cff)">Mercato</div>
+            <div class="work-body"><span class="tag">E-commerce</span><h3>Mercato Shop</h3><p>Магазин с быстрым чекаутом и интеграцией оплаты.</p></div>
+          </article>
+          <article class="work-card reveal" data-category="corp">
+            <div class="work-thumb" style="background:linear-gradient(135deg,#b06cff,#ff6c9c)">Lumen</div>
+            <div class="work-body"><span class="tag">Корпоративный</span><h3>Lumen Corp</h3><p>Мультиязычный сайт международной компании.</p></div>
+          </article>
+          <article class="work-card reveal" data-category="app">
+            <div class="work-thumb" style="background:linear-gradient(135deg,#ff9c6c,#ff6c9c)">Pulse</div>
+            <div class="work-body"><span class="tag">Веб-приложение</span><h3>Pulse Dashboard</h3><p>Дашборд аналитики в реальном времени.</p></div>
+          </article>
+          <article class="work-card reveal" data-category="landing">
+            <div class="work-thumb" style="background:linear-gradient(135deg,#2ee6c5,#b06cff)">Bloom</div>
+            <div class="work-body"><span class="tag">Лендинг</span><h3>Bloom Event</h3><p>Промо-страница конференции с регистрацией.</p></div>
+          </article>
+          <article class="work-card reveal" data-category="shop">
+            <div class="work-thumb" style="background:linear-gradient(135deg,#6c8cff,#2ee6c5)">Brewly</div>
+            <div class="work-body"><span class="tag">E-commerce</span><h3>Brewly Coffee</h3><p>Магазин кофе с подпиской на доставку.</p></div>
+          </article>
+          <article class="work-card reveal" data-category="corp">
+            <div class="work-thumb" style="background:linear-gradient(135deg,#ff6c9c,#6c8cff)">Atlas</div>
+            <div class="work-body"><span class="tag">Корпоративный</span><h3>Atlas Logistics</h3><p>Сайт логистической компании с калькулятором.</p></div>
+          </article>
+          <article class="work-card reveal" data-category="app">
+            <div class="work-thumb" style="background:linear-gradient(135deg,#b06cff,#2ee6c5)">Tasky</div>
+            <div class="work-body"><span class="tag">Веб-приложение</span><h3>Tasky</h3><p>Менеджер задач для команд с канбан-досками.</p></div>
+          </article>
+          <article class="work-card reveal" data-category="landing">
+            <div class="work-thumb" style="background:linear-gradient(135deg,#ff9c6c,#6c8cff)">Vista</div>
+            <div class="work-body"><span class="tag">Лендинг</span><h3>Vista App</h3><p>Промо мобильного приложения с предзаказом.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Ваш проект может быть следующим</h2>
+          <p>Расскажите идею — мы покажем, как её можно реализовать.</p>
+          <a href="contact.html" class="btn btn-primary">Начать проект</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo"><span class="logo-mark">N</span> Nebula<span class="gradient-text">Studio</span></a>
+          <p>Веб-студия полного цикла. Делаем сайты, которыми пользуются и которые приносят результат.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Навигация</h5>
+          <a href="index.html">Главная</a><a href="about.html">О нас</a><a href="services.html">Услуги</a><a href="portfolio.html">Портфолио</a><a href="contact.html">Контакты</a>
+        </div>
+        <div class="footer-col">
+          <h5>Контакты</h5>
+          <a href="mailto:hello@nebula.studio">hello@nebula.studio</a>
+          <a href="tel:+78000000000">+7 (800) 000-00-00</a>
+          <a href="#">Москва, ул. Космонавтов, 1</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Nebula Studio. Демонстрационный сайт-пример.</span>
+        <div class="socials"><a href="#">✈️</a><a href="#">🐙</a><a href="#">🏀</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
