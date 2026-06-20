@@ -309,6 +309,46 @@ section { padding: 80px 0; }
 }
 .socials a:hover { background: var(--surface-2); transform: translateY(-2px); }
 
+/* ===== Blog ===== */
+.post-card { display: flex; flex-direction: column; overflow: hidden; }
+.post-thumb { aspect-ratio: 16 / 9; display: grid; place-items: center; font-size: 44px; }
+.post-card .work-body { display: flex; flex-direction: column; flex: 1; }
+.post-meta { display: flex; gap: 14px; color: var(--muted); font-size: 13px; margin-bottom: 10px; }
+.post-card h3 { font-size: 20px; margin-bottom: 8px; }
+.post-card p { color: var(--muted); font-size: 15px; flex: 1; }
+.post-card .read-more { margin-top: 16px; color: var(--brand); font-weight: 600; font-size: 15px; }
+.post-featured { display: grid; grid-template-columns: 1.1fr 1fr; gap: 0; }
+.post-featured .post-thumb { aspect-ratio: auto; min-height: 320px; }
+.post-featured .work-body { padding: 40px; justify-content: center; }
+.post-featured h3 { font-size: 28px; }
+
+/* ===== Article / Case ===== */
+.article { max-width: 760px; margin: 0 auto; }
+.article .post-meta { justify-content: center; margin-bottom: 18px; }
+.article h1 { font-size: clamp(30px, 5vw, 46px); text-align: center; line-height: 1.15; margin-bottom: 16px; }
+.article .cover {
+  height: 280px; border-radius: var(--radius); margin: 30px 0;
+  display: grid; place-items: center; font-size: 80px; box-shadow: var(--shadow);
+}
+.article p { color: #c4cfdb; margin-bottom: 18px; font-size: 17px; }
+.article h2 { font-size: 26px; margin: 36px 0 14px; }
+.article ul.dotted { margin: 0 0 18px 20px; }
+.article ul.dotted li { list-style: disc; color: #c4cfdb; padding: 5px 0; }
+.article blockquote {
+  border-left: 3px solid var(--brand); padding: 6px 0 6px 22px; margin: 24px 0;
+  color: var(--text); font-size: 19px; font-style: italic;
+}
+.case-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 30px 0; }
+.case-meta .cell { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px; text-align: center; }
+.case-meta .cell .k { color: var(--muted); font-size: 13px; }
+.case-meta .cell .v { font-size: 20px; font-weight: 700; margin-top: 4px; }
+
+@media (max-width: 720px) {
+  .post-featured { grid-template-columns: 1fr; }
+  .post-featured .work-body { padding: 26px; }
+  .case-meta { grid-template-columns: 1fr; }
+}
+
 /* ===== Reveal animation ===== */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal.visible { opacity: 1; transform: none; }
